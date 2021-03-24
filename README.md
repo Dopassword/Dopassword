@@ -86,18 +86,18 @@ A simple, yet effective way of managing different passwords. A user can login, a
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 ![image](https://user-images.githubusercontent.com/77711850/111411140-4625d400-8697-11eb-8a11-d90e9e8e35c2.png)
 
-| Login Object |        |                           |   |   |
-|--------------|--------|---------------------------|---|---|
-| Property     | Type   | Description               |   |   |
-| userId       | String | unique id for the user    |   |   |
-| userPassword | String | unique password to log in |   |   |
+| Login Object |        |                           |
+|--------------|--------|---------------------------|
+| Property     | Type   | Description               |
+| userId       | String | unique id for the user    |
+| userPassword | String | unique password to log in |
 
-| Password Object |          |                                     |   |   |
-|-----------------|----------|-------------------------------------|---|---|
-| Property        | Type     | Description                         |   |   |
-| image           | File     | image of logo for application       |   |   |
-| caption         | String   | name of the application             |   |   |
-| createdAt       | DateTime | date when password was added        |   |   |
-| updatedAt       | DateTime | date when password is updated       |   |   |
-| appId           | String   | id to login to an application       |   |   |
-| appPassword     | String   | password to login to an application |   |   |
+| Password Object |          |                                     |
+|-----------------|----------|-------------------------------------|
+| Property        | Type     | Description                         |
+| image           | File     | image of logo for application       |
+| caption         | String   | name of the application             |
+| createdAt       | DateTime | date when password was added        |
+| updatedAt       | DateTime | date when password is updated       |
+| appId           | String   | id to login to an application       |
+| appPassword     | String   | password to login to an application |
