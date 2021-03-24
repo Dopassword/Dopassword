@@ -86,6 +86,8 @@ A simple, yet effective way of managing different passwords. A user can login, a
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 ![image](https://user-images.githubusercontent.com/77711850/111411140-4625d400-8697-11eb-8a11-d90e9e8e35c2.png)
 
+MODELS
+
 | Login Object |        |                           |
 |--------------|--------|---------------------------|
 | Property     | Type   | Description               |
@@ -101,3 +103,25 @@ A simple, yet effective way of managing different passwords. A user can login, a
 | updatedAt       | DateTime | date when password is updated       |
 | appId           | String   | id to login to an application       |
 | appPassword     | String   | password to login to an application |
+
+NETWORKING
+
+| Login Screen          |                                           |
+|-----------------------|-------------------------------------------|
+| (Create/PUT)          | Create a new Dopassword account           |
+| (Read/GET)            | Logging to an existing Dopassword account |
+|                       |                                           |
+| Profile View          |                                           |
+| (Read/GET)            | Scrolling list of exsiting applications   |
+| (Read/GET)            | Copy password to clipboard                |
+|                       |                                           |
+| Account Detail View   |                                           |
+| (Update/PUT)          | Update password                           |
+| (Create/PUT)          | Allow the user to make a custom name      |
+| (Delete)              | Delete the account                        |
+| (Update/PUT)          | Update logo                               |
+|                       |                                           |
+| Account Creation View |                                           |
+| (Create/PUT)          | Create a new username                     |
+| (Create/PUT)          | Create a new password                     |
+| (Create/PUT)          | Associate logo with account               |
