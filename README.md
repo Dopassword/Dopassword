@@ -109,6 +109,18 @@ NETWORKING
 | Login Screen          |                                           |
 |-----------------------|-------------------------------------------|
 | (Create/PUT)          | Create a new Dopassword account           |
+
+let query = PFQuery(className:"Posts")
+        query.includeKeys(["username", "password", "password.username"])
+        query.limit = 10
+        
+        query.findObjectsInBackground { (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.tableView.reloadData() //add connection later
+            }
+        }
+        
 | (Read/GET)            | Logging to an existing Dopassword account |
 |                       |                                           |
 | Profile View          |                                           |
