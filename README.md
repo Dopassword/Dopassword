@@ -110,8 +110,9 @@ NETWORKING
 |-----------------------|-------------------------------------------|
 | (Create/PUT)          | Create a new Dopassword account           |
 
-let query = PFQuery(className:"Posts")
+    let query = PFQuery(className:"Posts")
         query.includeKeys(["username", "password", "password.username"])
+        
         query.limit = 10
         
         query.findObjectsInBackground { (posts, error) in
