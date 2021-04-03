@@ -121,19 +121,19 @@ let query = PFQuery(className:"Posts")
             }
         }
         
-| (Read/GET)            | Logging to an existing Dopassword account |
-|                       |                                           |
-| Profile View          |                                           |
-| (Read/GET)            | Scrolling list of exsiting applications   |
-| (Read/GET)            | Copy password to clipboard                |
-|                       |                                           |
-| Account Detail View   |                                           |
-| (Update/PUT)          | Update password                           |
-| (Create/PUT)          | Allow the user to make a custom name      |
-| (Delete)              | Delete the account                        |
-| (Update/PUT)          | Update logo                               |
-|                       |                                           |
-| Account Creation View |                                           |
-| (Create/PUT)          | Create a new username                     |
-| (Create/PUT)          | Create a new password                     |
-| (Create/PUT)          | Associate logo with account               |
+ (Read/GET)            | Logging to an existing Dopassword account 
+                       |                                           
+ Profile View          |                                           
+ (Read/GET)            | Scrolling list of exsiting applications   
+ (Read/GET)            | Copy password to clipboard                
+                       |                                           
+ Account Detail View   |                                           
+ (Update/PUT)          | Update password                           
+ (Create/PUT)          | Allow the user to make a custom name      
+ (Delete)              | Delete the account                        
+ (Update/PUT)          | Update logo                               
+                       |                                           
+ Account Creation View |                                           
+ (Create/PUT)          | Create a new username                     
+ (Create/PUT)          | Create a new password                     
+ (Create/PUT)          | Associate logo with account               
