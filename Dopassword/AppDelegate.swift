@@ -22,9 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     $0.server = "https://parseapi.back4app.com"
             }
             Parse.initialize(with: parseConfig)
+        
+        return true
         // Override point for customization after application launch.
 
-
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -40,5 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-}
+    
 
+}

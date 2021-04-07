@@ -67,7 +67,7 @@ class ProfileViewController: UICollectionViewController {
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
-                self.tableView.reloadData() //add connection later
+               // self.tableView.reloadData() //add connection later
             }
         }
     }
