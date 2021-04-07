@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11D91CC9112DB410067DFB14 /* Pods_Dopassword_DopasswordUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C91408FC116CAF63EE136FE /* Pods_Dopassword_DopasswordUITests.framework */; };
+		35D0D89D5173CF4D0670467C /* Pods_DopasswordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB878C7AD419ABCB239A63B /* Pods_DopasswordTests.framework */; };
+		C2895F1AE295B322AA9A2387 /* Pods_Dopassword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2A052637D54B0207CFFF03 /* Pods_Dopassword.framework */; };
+		CC9A138C2619308100A238E8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A138B2619308100A238E8 /* ProfileViewController.swift */; };
+		CCCE34A226192CC0008BFEE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE34A126192CC0008BFEE3 /* AppDelegate.swift */; };
+		CCCE34A426192CC0008BFEE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE34A326192CC0008BFEE3 /* SceneDelegate.swift */; };
+		CCCE34A626192CC0008BFEE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE34A526192CC0008BFEE3 /* ViewController.swift */; };
+		CCCE34A926192CC0008BFEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCE34A726192CC0008BFEE3 /* Main.storyboard */; };
+		CCCE34AB26192CC3008BFEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCCE34AA26192CC3008BFEE3 /* Assets.xcassets */; };
+		CCCE34AE26192CC3008BFEE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCE34AC26192CC3008BFEE3 /* LaunchScreen.storyboard */; };
+		CCCE34B926192CC3008BFEE3 /* DopasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE34B826192CC3008BFEE3 /* DopasswordTests.swift */; };
+		CCCE34C426192CC3008BFEE3 /* DopasswordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE34C326192CC3008BFEE3 /* DopasswordUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCCE34B526192CC3008BFEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCCE349626192CC0008BFEE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCCE349D26192CC0008BFEE3;
+			remoteInfo = Dopassword;
+		};
+		CCCE34C026192CC3008BFEE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCCE349626192CC0008BFEE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCCE349D26192CC0008BFEE3;
+			remoteInfo = Dopassword;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CB878C7AD419ABCB239A63B /* Pods_DopasswordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DopasswordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		158470B2C5BBDCAD40CEDA9E /* Pods-Dopassword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopassword.release.xcconfig"; path = "Target Support Files/Pods-Dopassword/Pods-Dopassword.release.xcconfig"; sourceTree = "<group>"; };
+		23436669778DFACFFE24B2A9 /* Pods-Dopassword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopassword.debug.xcconfig"; path = "Target Support Files/Pods-Dopassword/Pods-Dopassword.debug.xcconfig"; sourceTree = "<group>"; };
+		445654E36F68904213FCE21A /* Pods-DopasswordTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DopasswordTests.release.xcconfig"; path = "Target Support Files/Pods-DopasswordTests/Pods-DopasswordTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B2BFC2738CE80C81707A2CA /* Pods-Dopassword-DopasswordUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopassword-DopasswordUITests.release.xcconfig"; path = "Target Support Files/Pods-Dopassword-DopasswordUITests/Pods-Dopassword-DopasswordUITests.release.xcconfig"; sourceTree = "<group>"; };
+		521B2DC5CBC0BEFA42CE28D6 /* Pods-Dopassword-DopasswordUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dopassword-DopasswordUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dopassword-DopasswordUITests/Pods-Dopassword-DopasswordUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D2A052637D54B0207CFFF03 /* Pods_Dopassword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dopassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C91408FC116CAF63EE136FE /* Pods_Dopassword_DopasswordUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dopassword_DopasswordUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE160C5A140065B48291647 /* Pods-DopasswordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DopasswordTests.debug.xcconfig"; path = "Target Support Files/Pods-DopasswordTests/Pods-DopasswordTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC9A138B2619308100A238E8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CCCE349E26192CC0008BFEE3 /* Dopassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCE34A126192CC0008BFEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCCE34A326192CC0008BFEE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CCCE34A526192CC0008BFEE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCCE34A826192CC0008BFEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCCE34AA26192CC3008BFEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCCE34AD26192CC3008BFEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCCE34AF26192CC3008BFEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCCE34B426192CC3008BFEE3 /* DopasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DopasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCE34B826192CC3008BFEE3 /* DopasswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopasswordTests.swift; sourceTree = "<group>"; };
+		CCCE34BA26192CC3008BFEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCCE34BF26192CC3008BFEE3 /* DopasswordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DopasswordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCCE34C326192CC3008BFEE3 /* DopasswordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopasswordUITests.swift; sourceTree = "<group>"; };
+		CCCE34C526192CC3008BFEE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCCE349B26192CC0008BFEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2895F1AE295B322AA9A2387 /* Pods_Dopassword.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCE34B126192CC3008BFEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D0D89D5173CF4D0670467C /* Pods_DopasswordTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCE34BC26192CC3008BFEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D91CC9112DB410067DFB14 /* Pods_Dopassword_DopasswordUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012E91F24367613886451BEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23436669778DFACFFE24B2A9 /* Pods-Dopassword.debug.xcconfig */,
+				158470B2C5BBDCAD40CEDA9E /* Pods-Dopassword.release.xcconfig */,
+				521B2DC5CBC0BEFA42CE28D6 /* Pods-Dopassword-DopasswordUITests.debug.xcconfig */,
+				4B2BFC2738CE80C81707A2CA /* Pods-Dopassword-DopasswordUITests.release.xcconfig */,
+				ADE160C5A140065B48291647 /* Pods-DopasswordTests.debug.xcconfig */,
+				445654E36F68904213FCE21A /* Pods-DopasswordTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3E7DBBDA7776CCE2B4C10C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D2A052637D54B0207CFFF03 /* Pods_Dopassword.framework */,
+				9C91408FC116CAF63EE136FE /* Pods_Dopassword_DopasswordUITests.framework */,
+				0CB878C7AD419ABCB239A63B /* Pods_DopasswordTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCCE349526192CC0008BFEE3 = {
+			isa = PBXGroup;
+			children = (
+				CCCE34A026192CC0008BFEE3 /* Dopassword */,
+				CCCE34B726192CC3008BFEE3 /* DopasswordTests */,
+				CCCE34C226192CC3008BFEE3 /* DopasswordUITests */,
+				CCCE349F26192CC0008BFEE3 /* Products */,
+				012E91F24367613886451BEA /* Pods */,
+				C3E7DBBDA7776CCE2B4C10C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCCE349F26192CC0008BFEE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCCE349E26192CC0008BFEE3 /* Dopassword.app */,
+				CCCE34B426192CC3008BFEE3 /* DopasswordTests.xctest */,
+				CCCE34BF26192CC3008BFEE3 /* DopasswordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCCE34A026192CC0008BFEE3 /* Dopassword */ = {
+			isa = PBXGroup;
+			children = (
+				CCCE34A126192CC0008BFEE3 /* AppDelegate.swift */,
+				CCCE34A326192CC0008BFEE3 /* SceneDelegate.swift */,
+				CCCE34A526192CC0008BFEE3 /* ViewController.swift */,
+				CC9A138B2619308100A238E8 /* ProfileViewController.swift */,
+				CCCE34A726192CC0008BFEE3 /* Main.storyboard */,
+				CCCE34AA26192CC3008BFEE3 /* Assets.xcassets */,
+				CCCE34AC26192CC3008BFEE3 /* LaunchScreen.storyboard */,
+				CCCE34AF26192CC3008BFEE3 /* Info.plist */,
+			);
+			path = Dopassword;
+			sourceTree = "<group>";
+		};
+		CCCE34B726192CC3008BFEE3 /* DopasswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCCE34B826192CC3008BFEE3 /* DopasswordTests.swift */,
+				CCCE34BA26192CC3008BFEE3 /* Info.plist */,
+			);
+			path = DopasswordTests;
+			sourceTree = "<group>";
+		};
+		CCCE34C226192CC3008BFEE3 /* DopasswordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCCE34C326192CC3008BFEE3 /* DopasswordUITests.swift */,
+				CCCE34C526192CC3008BFEE3 /* Info.plist */,
+			);
+			path = DopasswordUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCCE349D26192CC0008BFEE3 /* Dopassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCE34C826192CC3008BFEE3 /* Build configuration list for PBXNativeTarget "Dopassword" */;
+			buildPhases = (
+				37CA8F34F8A5F1BAC6CDB32C /* [CP] Check Pods Manifest.lock */,
+				CCCE349A26192CC0008BFEE3 /* Sources */,
+				CCCE349B26192CC0008BFEE3 /* Frameworks */,
+				CCCE349C26192CC0008BFEE3 /* Resources */,
+				BD6267A454CD5368E2314F94 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dopassword;
+			productName = Dopassword;
+			productReference = CCCE349E26192CC0008BFEE3 /* Dopassword.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCCE34B326192CC3008BFEE3 /* DopasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCE34CB26192CC3008BFEE3 /* Build configuration list for PBXNativeTarget "DopasswordTests" */;
+			buildPhases = (
+				6E49677482BBA475CCE28529 /* [CP] Check Pods Manifest.lock */,
+				CCCE34B026192CC3008BFEE3 /* Sources */,
+				CCCE34B126192CC3008BFEE3 /* Frameworks */,
+				CCCE34B226192CC3008BFEE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCCE34B626192CC3008BFEE3 /* PBXTargetDependency */,
+			);
+			name = DopasswordTests;
+			productName = DopasswordTests;
+			productReference = CCCE34B426192CC3008BFEE3 /* DopasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCCE34BE26192CC3008BFEE3 /* DopasswordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCCE34CE26192CC3008BFEE3 /* Build configuration list for PBXNativeTarget "DopasswordUITests" */;
+			buildPhases = (
+				AA418940123A1EFD33E3F597 /* [CP] Check Pods Manifest.lock */,
+				CCCE34BB26192CC3008BFEE3 /* Sources */,
+				CCCE34BC26192CC3008BFEE3 /* Frameworks */,
+				CCCE34BD26192CC3008BFEE3 /* Resources */,
+				5B80644222439B641A23AE07 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCCE34C126192CC3008BFEE3 /* PBXTargetDependency */,
+			);
+			name = DopasswordUITests;
+			productName = DopasswordUITests;
+			productReference = CCCE34BF26192CC3008BFEE3 /* DopasswordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCCE349626192CC0008BFEE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CCCE349D26192CC0008BFEE3 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CCCE34B326192CC3008BFEE3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CCCE349D26192CC0008BFEE3;
+					};
+					CCCE34BE26192CC3008BFEE3 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CCCE349D26192CC0008BFEE3;
+					};
+				};
+			};
+			buildConfigurationList = CCCE349926192CC0008BFEE3 /* Build configuration list for PBXProject "Dopassword" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCCE349526192CC0008BFEE3;
+			productRefGroup = CCCE349F26192CC0008BFEE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCCE349D26192CC0008BFEE3 /* Dopassword */,
+				CCCE34B326192CC3008BFEE3 /* DopasswordTests */,
+				CCCE34BE26192CC3008BFEE3 /* DopasswordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCCE349C26192CC0008BFEE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCE34AE26192CC3008BFEE3 /* LaunchScreen.storyboard in Resources */,
+				CCCE34AB26192CC3008BFEE3 /* Assets.xcassets in Resources */,
+				CCCE34A926192CC0008BFEE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCE34B226192CC3008BFEE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCE34BD26192CC3008BFEE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37CA8F34F8A5F1BAC6CDB32C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dopassword-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B80644222439B641A23AE07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dopassword-DopasswordUITests/Pods-Dopassword-DopasswordUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dopassword-DopasswordUITests/Pods-Dopassword-DopasswordUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dopassword-DopasswordUITests/Pods-Dopassword-DopasswordUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E49677482BBA475CCE28529 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DopasswordTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA418940123A1EFD33E3F597 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dopassword-DopasswordUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD6267A454CD5368E2314F94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dopassword/Pods-Dopassword-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dopassword/Pods-Dopassword-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dopassword/Pods-Dopassword-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCCE349A26192CC0008BFEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCE34A626192CC0008BFEE3 /* ViewController.swift in Sources */,
+				CCCE34A226192CC0008BFEE3 /* AppDelegate.swift in Sources */,
+				CC9A138C2619308100A238E8 /* ProfileViewController.swift in Sources */,
+				CCCE34A426192CC0008BFEE3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCE34B026192CC3008BFEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCE34B926192CC3008BFEE3 /* DopasswordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCE34BB26192CC3008BFEE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCCE34C426192CC3008BFEE3 /* DopasswordUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCCE34B626192CC3008BFEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCCE349D26192CC0008BFEE3 /* Dopassword */;
+			targetProxy = CCCE34B526192CC3008BFEE3 /* PBXContainerItemProxy */;
+		};
+		CCCE34C126192CC3008BFEE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCCE349D26192CC0008BFEE3 /* Dopassword */;
+			targetProxy = CCCE34C026192CC3008BFEE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCCE34A726192CC0008BFEE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCCE34A826192CC0008BFEE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCCE34AC26192CC3008BFEE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCCE34AD26192CC3008BFEE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCCE34C626192CC3008BFEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCCE34C726192CC3008BFEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCCE34C926192CC3008BFEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23436669778DFACFFE24B2A9 /* Pods-Dopassword.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dopassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-001221633.Dopassword";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCCE34CA26192CC3008BFEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158470B2C5BBDCAD40CEDA9E /* Pods-Dopassword.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Dopassword/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-001221633.Dopassword";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCCE34CC26192CC3008BFEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADE160C5A140065B48291647 /* Pods-DopasswordTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DopasswordTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-001221633.DopasswordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dopassword.app/Dopassword";
+			};
+			name = Debug;
+		};
+		CCCE34CD26192CC3008BFEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445654E36F68904213FCE21A /* Pods-DopasswordTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DopasswordTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-001221633.DopasswordTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dopassword.app/Dopassword";
+			};
+			name = Release;
+		};
+		CCCE34CF26192CC3008BFEE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 521B2DC5CBC0BEFA42CE28D6 /* Pods-Dopassword-DopasswordUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DopasswordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-001221633.DopasswordUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dopassword;
+			};
+			name = Debug;
+		};
+		CCCE34D026192CC3008BFEE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B2BFC2738CE80C81707A2CA /* Pods-Dopassword-DopasswordUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DopasswordUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-001221633.DopasswordUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dopassword;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCCE349926192CC0008BFEE3 /* Build configuration list for PBXProject "Dopassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCE34C626192CC3008BFEE3 /* Debug */,
+				CCCE34C726192CC3008BFEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCCE34C826192CC3008BFEE3 /* Build configuration list for PBXNativeTarget "Dopassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCE34C926192CC3008BFEE3 /* Debug */,
+				CCCE34CA26192CC3008BFEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCCE34CB26192CC3008BFEE3 /* Build configuration list for PBXNativeTarget "DopasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCE34CC26192CC3008BFEE3 /* Debug */,
+				CCCE34CD26192CC3008BFEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCCE34CE26192CC3008BFEE3 /* Build configuration list for PBXNativeTarget "DopasswordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCCE34CF26192CC3008BFEE3 /* Debug */,
+				CCCE34D026192CC3008BFEE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCCE349626192CC0008BFEE3 /* Project object */;
+}
