@@ -26,8 +26,18 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func LoginButton(_ sender: Any) {
+        let username = usernameField.text!
+        let password = passwordField.text!
         
+        PFUser.logInWithUsername(inBackground: username, password: password)
+        {(user,error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "LoginSegue", sender: nil)
+            } else {
+                print("Error: \(String(describing: error?.localizedDescription))")
+            }
         
+        }
     }
 
     @IBAction func RegisterButton(_ sender: Any) {

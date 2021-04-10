@@ -24,6 +24,7 @@
                                 <connections>
                                     <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9H-m0-pnQ"/>
                                     <action selector="LoginButton:" destination="vZJ-uY-k27" eventType="touchUpInside" id="YM4-dl-ubu"/>
+                                    <segue destination="XN8-d3-FOa" kind="presentation" identifier="LoginSegue" id="svU-eN-rDG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emV-LX-uEe">
@@ -60,10 +61,6 @@
                                     <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="j5L-d4-LCr"/>
                                 </connections>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.down.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NXF-jg-W7q">
-                                <rect key="frame" x="87" y="108" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sy6-gm-gBj">
                                 <rect key="frame" x="167" y="385" width="203" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -80,6 +77,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dopasswordlogo" translatesAutoresizingMaskIntoConstraints="NO" id="NXF-jg-W7q">
+                                <rect key="frame" x="58" y="125" width="298" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -88,13 +89,12 @@
                         <outlet property="UsernameField" destination="sy6-gm-gBj" id="Byi-1a-5Gs"/>
                         <outlet property="passwordField" destination="dn8-NF-tXp" id="njd-Qi-xhL"/>
                         <outlet property="usernameField" destination="sy6-gm-gBj" id="2gK-SR-yZp"/>
-                        <segue destination="XN8-d3-FOa" kind="presentation" identifier="LoginSegue" id="9IA-Hn-9xt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="vZJ-uY-k27" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4" y="100"/>
+            <point key="canvasLocation" x="2.8985507246376816" y="99.776785714285708"/>
         </scene>
         <!--Accounts-->
         <scene sceneID="qRe-CO-5oJ">
@@ -143,7 +143,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
+        <image name="dopasswordlogo" width="200" height="200"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
