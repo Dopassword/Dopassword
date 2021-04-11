@@ -70,8 +70,24 @@ class ProfileViewController: UICollectionViewController {
                // self.tableView.reloadData() //add connection later
             }
         }
+    
+    
+    
+    @IBAction func LogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        
+        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+        
+        
+        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+        delegate.window?.rootViewContoller = loginViewController
+        
     }
-
+        
+}
+    
     // MARK: UICollectionViewDelegate
 
     /*

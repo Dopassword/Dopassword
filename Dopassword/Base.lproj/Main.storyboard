@@ -119,9 +119,21 @@
                             <outlet property="delegate" destination="Ejh-wL-r79" id="dRS-Bu-DQI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Accounts" id="JoS-9D-xCb" userLabel="Accounts" customClass="AccountsViewTable"/>
+                    <navigationItem key="navigationItem" title="Accounts" id="JoS-9D-xCb" userLabel="Accounts" customClass="AccountsViewTable">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="5p9-Ms-30V">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="uaZ-Vc-k5o" userLabel="LogoutButton">
+                                <rect key="frame" x="20" y="13" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Logout"/>
+                            </button>
+                            <connections>
+                                <action selector="LogoutButton:" destination="kDU-1q-Aad" id="SiO-SP-W9a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7XU-DI-4gh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="kDU-1q-Aad" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1299" y="909"/>
         </scene>
