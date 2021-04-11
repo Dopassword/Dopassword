@@ -29,21 +29,21 @@ A simple, yet effective way of managing different passwords. A user can login, a
 
 **Required Must-have Stories**
 
-* User can register a new account with the password manager
-* User can login
-* User can add a new account
-* User can add a corresponding password
-* User can name an account
-* User can remove an account from the password manager
-* User can update password
-* User can view all accounts in a list
+- [X] User can register a new account with the password manager
+- [X] User can login
+- [] User can add a new account
+- [] User can add a corresponding password
+- [] User can name an account
+- [] User can remove an account from the password manager
+- [] User can update password
+- [] User can view all accounts in a list
 
 **Optional Nice-to-have Stories**
 
-* User can generate a new password
-* Two-factor authentication
-* User can search for an account
-* Add logos for applications
+- [] User can generate a new password
+- [] Two-factor authentication
+- [] User can search for an account
+- [] Add logos for applications
 
 ### 2. Screen Archetypes
 
@@ -138,3 +138,10 @@ NETWORKING
  (Create/PUT)          | Create a new username                     
  (Create/PUT)          | Create a new password                     
  (Create/PUT)          | Associate logo with account               
+
+## Video Walkthrough
+
+Here's a walkthrough of progress after week one:
+
+<img src='http://g.recordit.co/UBlI4Sdn0r.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/ydyh7OLtWg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
