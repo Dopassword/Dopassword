@@ -57,34 +57,23 @@ class ProfileViewController: UICollectionViewController {
     
         return cell
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let query = PFQuery(className:"Posts")
-        query.includeKeys(["username", "password", "password.username"])
-        query.limit = 10
-        
-        query.findObjectsInBackground { (posts, error) in
-            if posts != nil {
-                self.posts = posts!
-               // self.tableView.reloadData() //add connection later
-            }
-        }
     
     
     
-    @IBAction func LogoutButton(_ sender: Any) {
-        PFUser.logOut()
-        
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        
-        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
-        
-        
-        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
-        delegate.window?.rootViewContoller = loginViewController
-        
-    }
+    
+//    @IBAction func LogoutButton(_ sender: Any) {
+//        PFUser.logOut()
+//
+//        let main = UIStoryboard(name: "Main", bundle: nil)
+//
+//        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+//
+//
+//        let delegate = self.view.window?.windowScene?.delegate as! SceneDelegate
+//        delegate.window?.rootViewContoller = loginViewController
+//
+//    }
+        //uncomment
         
 }
     
@@ -119,4 +108,4 @@ class ProfileViewController: UICollectionViewController {
     }
     */
 
-}
+

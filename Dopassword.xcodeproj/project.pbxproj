@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		11D91CC9112DB410067DFB14 /* Pods_Dopassword_DopasswordUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C91408FC116CAF63EE136FE /* Pods_Dopassword_DopasswordUITests.framework */; };
 		35D0D89D5173CF4D0670467C /* Pods_DopasswordTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB878C7AD419ABCB239A63B /* Pods_DopasswordTests.framework */; };
-		B2ADA19B261D56D300F04A1A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADA19A261D56D300F04A1A /* AccountViewController.swift */; };
-		B2ADA1A0261D572600F04A1A /* AccountCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADA19F261D572600F04A1A /* AccountCreationView.swift */; };
 		B2ADA1A5261D574B00F04A1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2ADA1A4261D574B00F04A1A /* LoginViewController.swift */; };
 		C2895F1AE295B322AA9A2387 /* Pods_Dopassword.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2A052637D54B0207CFFF03 /* Pods_Dopassword.framework */; };
+		CC3D1050262685420018AC4D /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D104F262685420018AC4D /* ProfileTableViewController.swift */; };
+		CC3D1051262685420018AC4D /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D104F262685420018AC4D /* ProfileTableViewController.swift */; };
+		CC3D1052262685420018AC4D /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D104F262685420018AC4D /* ProfileTableViewController.swift */; };
+		CC3D105D262690590018AC4D /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D105C262690590018AC4D /* AccountCell.swift */; };
+		CC3D105E262690590018AC4D /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D105C262690590018AC4D /* AccountCell.swift */; };
+		CC3D105F262690590018AC4D /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D105C262690590018AC4D /* AccountCell.swift */; };
 		CC9A138C2619308100A238E8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A138B2619308100A238E8 /* ProfileViewController.swift */; };
 		CCCE34A226192CC0008BFEE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE34A126192CC0008BFEE3 /* AppDelegate.swift */; };
 		CCCE34A426192CC0008BFEE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE34A326192CC0008BFEE3 /* SceneDelegate.swift */; };
-		CCCE34A626192CC0008BFEE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCE34A526192CC0008BFEE3 /* ViewController.swift */; };
 		CCCE34A926192CC0008BFEE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCE34A726192CC0008BFEE3 /* Main.storyboard */; };
 		CCCE34AB26192CC3008BFEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCCE34AA26192CC3008BFEE3 /* Assets.xcassets */; };
 		CCCE34AE26192CC3008BFEE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCCE34AC26192CC3008BFEE3 /* LaunchScreen.storyboard */; };
@@ -51,14 +54,13 @@
 		5D2A052637D54B0207CFFF03 /* Pods_Dopassword.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dopassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C91408FC116CAF63EE136FE /* Pods_Dopassword_DopasswordUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dopassword_DopasswordUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE160C5A140065B48291647 /* Pods-DopasswordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DopasswordTests.debug.xcconfig"; path = "Target Support Files/Pods-DopasswordTests/Pods-DopasswordTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B2ADA19A261D56D300F04A1A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		B2ADA19F261D572600F04A1A /* AccountCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreationView.swift; sourceTree = "<group>"; };
 		B2ADA1A4261D574B00F04A1A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CC3D104F262685420018AC4D /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		CC3D105C262690590018AC4D /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
 		CC9A138B2619308100A238E8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CCCE349E26192CC0008BFEE3 /* Dopassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCCE34A126192CC0008BFEE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCCE34A326192CC0008BFEE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCCE34A526192CC0008BFEE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCCE34A826192CC0008BFEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCCE34AA26192CC3008BFEE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCCE34AD26192CC3008BFEE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,15 +151,14 @@
 			children = (
 				CCCE34A126192CC0008BFEE3 /* AppDelegate.swift */,
 				CCCE34A326192CC0008BFEE3 /* SceneDelegate.swift */,
-				CCCE34A526192CC0008BFEE3 /* ViewController.swift */,
 				CC9A138B2619308100A238E8 /* ProfileViewController.swift */,
 				CCCE34A726192CC0008BFEE3 /* Main.storyboard */,
 				CCCE34AA26192CC3008BFEE3 /* Assets.xcassets */,
 				CCCE34AC26192CC3008BFEE3 /* LaunchScreen.storyboard */,
 				CCCE34AF26192CC3008BFEE3 /* Info.plist */,
-				B2ADA19A261D56D300F04A1A /* AccountViewController.swift */,
-				B2ADA19F261D572600F04A1A /* AccountCreationView.swift */,
 				B2ADA1A4261D574B00F04A1A /* LoginViewController.swift */,
+				CC3D104F262685420018AC4D /* ProfileTableViewController.swift */,
+				CC3D105C262690590018AC4D /* AccountCell.swift */,
 			);
 			path = Dopassword;
 			sourceTree = "<group>";
@@ -419,11 +420,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2ADA1A5261D574B00F04A1A /* LoginViewController.swift in Sources */,
-				CCCE34A626192CC0008BFEE3 /* ViewController.swift in Sources */,
-				B2ADA1A0261D572600F04A1A /* AccountCreationView.swift in Sources */,
-				B2ADA19B261D56D300F04A1A /* AccountViewController.swift in Sources */,
 				CCCE34A226192CC0008BFEE3 /* AppDelegate.swift in Sources */,
 				CC9A138C2619308100A238E8 /* ProfileViewController.swift in Sources */,
+				CC3D1050262685420018AC4D /* ProfileTableViewController.swift in Sources */,
+				CC3D105D262690590018AC4D /* AccountCell.swift in Sources */,
 				CCCE34A426192CC0008BFEE3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,7 +432,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3D1051262685420018AC4D /* ProfileTableViewController.swift in Sources */,
 				CCCE34B926192CC3008BFEE3 /* DopasswordTests.swift in Sources */,
+				CC3D105E262690590018AC4D /* AccountCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +442,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3D1052262685420018AC4D /* ProfileTableViewController.swift in Sources */,
 				CCCE34C426192CC3008BFEE3 /* DopasswordUITests.swift in Sources */,
+				CC3D105F262690590018AC4D /* AccountCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
