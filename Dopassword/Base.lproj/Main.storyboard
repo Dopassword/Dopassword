@@ -153,6 +153,14 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="AccountLabel" destination="jh7-jU-bEz" id="2yx-vP-EmA"/>
+                                    <outlet property="AccountName" destination="BaZ-TS-TjW" id="QeQ-4l-Teb"/>
+                                    <outlet property="Password" destination="YvV-BF-78d" id="uL4-xI-fXx"/>
+                                    <outlet property="PasswordLabel" destination="zyC-xw-6rJ" id="Cts-e4-NSL"/>
+                                    <outlet property="PhotoView" destination="xZs-cZ-hf1" id="47F-Pc-4cV"/>
+                                    <outlet property="Username" destination="YFN-Ob-S0z" id="IOJ-54-JKW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -174,7 +182,11 @@
                                 <action selector="logoutPressed:" destination="Ejh-wL-r79" id="WpK-k4-irv"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus.square" catalog="system" id="6gp-sN-by9"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="plus.square" catalog="system" id="6gp-sN-by9">
+                            <connections>
+                                <segue destination="NAD-nF-92f" kind="presentation" id="7iF-EC-aQU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toLoginScreen" modalPresentationStyle="fullScreen" id="u4x-jU-Rna"/>
@@ -183,6 +195,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7XU-DI-4gh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1298.5507246376812" y="908.70535714285711"/>
+        </scene>
+        <!--Creation View Controller-->
+        <scene sceneID="Li7-5P-12M">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="NAD-nF-92f" customClass="CreationViewController" customModule="Dopassword" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CON-PH-zDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.and.arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="a19-Ks-wj2">
+                                <rect key="frame" x="87" y="63" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3qr-Lz-dKf" appends="YES" id="VOu-aq-352"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQD-wm-kIg">
+                                <rect key="frame" x="20" y="370" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPE-2B-1mI">
+                                <rect key="frame" x="136" y="436" width="143" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSaveButton:" destination="NAD-nF-92f" eventType="touchUpInside" id="LTn-As-BsH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add username..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q9q-oW-mOD">
+                                <rect key="frame" x="20" y="328" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="br0-P7-Akx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="a19-Ks-wj2" id="6mJ-Zl-y7j"/>
+                        <outlet property="passwordField" destination="jQD-wm-kIg" id="0SM-Y5-C3S"/>
+                        <outlet property="usernameField" destination="Q9q-oW-mOD" id="spP-uz-j3W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gk9-3o-tcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3qr-Lz-dKf">
+                    <connections>
+                        <action selector="onLogoButton:" destination="NAD-nF-92f" id="XAj-LP-XeH"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2540.579710144928" y="908.70535714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dDu-ez-atw">
@@ -204,8 +275,12 @@
     <resources>
         <image name="dopasswordlogo" width="200" height="200"/>
         <image name="plus.square" catalog="system" width="128" height="114"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

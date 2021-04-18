@@ -9,18 +9,61 @@ import UIKit
 import Parse
 import AlamofireImage
 
+//parstagram 6 10:30
 class ProfileTableViewController: UITableViewController {
+    //missing something, parstagram 6 querying posts 10:15
 
+    
+    
     var posts = [PFObject]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className:"Accounts")
+        query.includeKey("name")
+        query.limit = 10
+        
+        query.findObjectsInBackground { (posts, error) in
+            if posts != nil {
+                self.posts = posts!
+                self.TableViews.reloadData()
+            }
+        }
+    }
+    
+    func TableViews(_ TableViews: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
     }
 
-    @IBAction func onLogout(_ sender: Any) {
+    func TableViews(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        print ("hello")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
+        
+        let post = posts[indexPath.row]
+        
+        let user = post["name"] as! PFUser
+        cell.UsernameLabel.text = user.username
+        
+        cell.PasswordLabel.text = (post["password"] as! String)
+            
+        let imageFile = post["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        
+        cell.PhotoView.af_setImage(withURL: url)
+        
+        return cell
+    }
+    
+    @IBAction func onLogout(_ sender: Any) {
         
         PFUser.logOut()
 
@@ -49,20 +92,20 @@ class ProfileTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let query = PFQuery(className:"Posts")
-        query.includeKeys(["username", "password", "password.username"])
-        query.limit = 10
-        
-        query.findObjectsInBackground { (posts, error) in
-            if posts != nil {
-                self.posts = posts!
-               // self.tableView.reloadData() //add connection later
-            }
-        }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//
+//        let query = PFQuery(className:"Posts")
+//        query.includeKeys(["username", "password", "password.username"])
+//        query.limit = 10
+//
+//        query.findObjectsInBackground { (posts, error) in
+//            if posts != nil {
+//                self.posts = posts!
+//               // self.tableView.reloadData() //add connection later
+//            }
+//        }
 
 
 }
-}
+

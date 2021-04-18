@@ -5,6 +5,8 @@
 //  Created by user190009 on 4/3/21.
 //
 
+// Not in use, use profile table view controller if possible
+
 import UIKit
 import Parse
 import AlamofireImage

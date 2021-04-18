@@ -9,6 +9,14 @@ import UIKit
 
 class AccountCell: UITableViewCell {
 
+    //manually changed name
+    @IBOutlet weak var PhotoView: UIImageView!
+    @IBOutlet weak var AccountName: UILabel!
+    @IBOutlet weak var UsernameLabel: UILabel!
+    @IBOutlet weak var PasswordLabel: UILabel!
+    @IBOutlet weak var UsernameField: UILabel!
+    @IBOutlet weak var PasswordField: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
