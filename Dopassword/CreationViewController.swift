@@ -17,7 +17,9 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
     
     @IBOutlet weak var passwordField: UITextField!
     
-        override func viewDidLoad() {
+    @IBOutlet weak var accountField: UITextField!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
     }
 
@@ -26,6 +28,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         
         account["name"] = usernameField.text!
         account["password"] = passwordField.text!
+        account["account"] = accountField.text!
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
@@ -42,8 +45,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
             
         }
         
-        //add a way to save logo to parse. ask eli
-        
+     
     }
     
     @IBAction func onLogoButton(_ sender: Any) {
@@ -66,7 +68,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         let image = info[.editedImage] as! UIImage
         
         let size = CGSize(width: 300, height: 300)
-        let scaledImage = image.af_imageScaled(to: size)
+        let scaledImage = image.af.imageScaled(to: size)
         
         imageView.image = scaledImage
         

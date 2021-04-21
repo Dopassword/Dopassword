@@ -19,7 +19,7 @@ class ProfileTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.rowHeight = 100
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -44,16 +44,18 @@ class ProfileTableViewController: UITableViewController {
         return posts.count
     }
 
-    func tablewView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print("Test2")
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
         print("Test1")
         let post = posts[indexPath.row]
         print(posts)
-        //let user = post["name"] as! String
-        cell.UsernameLabel.text = post["name"] as! String
+
+        cell.UsernameLabel.text = (post["name"] as! String)
         
         cell.PasswordLabel.text = (post["password"] as! String)
+        
+        cell.AccountName.text = (post["account"] as? String)
             
         let imageFile = post["image"] as! PFFileObject
         let urlString = imageFile.url!
