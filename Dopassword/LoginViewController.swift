@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
     @IBAction func LoginButton(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
-        
+        print(password)
         PFUser.logInWithUsername(inBackground: username, password: password)
         {(user,error) in
             if user != nil {

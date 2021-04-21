@@ -85,7 +85,6 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="UsernameField" destination="sy6-gm-gBj" id="Byi-1a-5Gs"/>
                         <outlet property="passwordField" destination="dn8-NF-tXp" id="njd-Qi-xhL"/>
                         <outlet property="usernameField" destination="sy6-gm-gBj" id="2gK-SR-yZp"/>
                         <segue destination="XN8-d3-FOa" kind="presentation" identifier="LoginSegue" id="c8I-q0-1rH"/>

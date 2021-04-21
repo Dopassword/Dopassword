@@ -19,14 +19,14 @@ class ProfileTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        print("Hello")
         let query = PFQuery(className:"Accounts")
         query.includeKey("name")
         query.limit = 10
@@ -34,23 +34,24 @@ class ProfileTableViewController: UITableViewController {
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
-                self.TableViews.reloadData()
+                print(self.posts)
+                self.tableView.reloadData()
             }
         }
     }
     
-    func TableViews(_ TableViews: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
     }
 
-    func TableViews(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+    func tablewView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("Test2")
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
-        
+        print("Test1")
         let post = posts[indexPath.row]
-        
-        let user = post["name"] as! PFUser
-        cell.UsernameLabel.text = user.username
+        print(posts)
+        //let user = post["name"] as! String
+        cell.UsernameLabel.text = post["name"] as! String
         
         cell.PasswordLabel.text = (post["password"] as! String)
             
@@ -58,7 +59,7 @@ class ProfileTableViewController: UITableViewController {
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         
-        cell.PhotoView.af_setImage(withURL: url)
+        cell.PhotoView.af.setImage(withURL: url)
         
         return cell
     }
@@ -85,13 +86,10 @@ class ProfileTableViewController: UITableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+
 //    override func viewDidAppear(_ animated: Bool) {
 //        super.viewDidAppear(animated)
 //
