@@ -92,19 +92,17 @@ class ProfileTableViewController: UITableViewController {
     }
 
 
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+//        print("Loading up the details screen")
 //
-//        let query = PFQuery(className:"Posts")
-//        query.includeKeys(["username", "password", "password.username"])
-//        query.limit = 10
+//        let cell = sender as! UITableViewCell
+//        let indexPath = tableView.indexPath(for: cell)!
+//        let account = posts[indexPath.row]
 //
-//        query.findObjectsInBackground { (posts, error) in
-//            if posts != nil {
-//                self.posts = posts!
-//               // self.tableView.reloadData() //add connection later
-//            }
-//        }
+//        let detailViewController = segue.destination as! DetailViewController
+//        detailViewController.post = account
+//
+//    }
 
 
 }
