@@ -16,17 +16,18 @@ class ProfileTableViewController: UITableViewController {
     
     
     var posts = [PFObject]()
+    var accounts = [[String:Any]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 100
+        tableView.rowHeight = 140
         tableView.delegate = self
         tableView.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("Hello")
+
         let query = PFQuery(className:"Accounts")
         query.includeKey("name")
         query.limit = 10
@@ -34,7 +35,6 @@ class ProfileTableViewController: UITableViewController {
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
-                print(self.posts)
                 self.tableView.reloadData()
             }
         }
@@ -45,11 +45,8 @@ class ProfileTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("Test2")
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
-        print("Test1")
         let post = posts[indexPath.row]
-        print(posts)
 
         cell.UsernameLabel.text = (post["name"] as! String)
         
@@ -63,8 +60,19 @@ class ProfileTableViewController: UITableViewController {
         
         cell.PhotoView.af.setImage(withURL: url)
         
+        
+        
         return cell
     }
+          
+    @IBAction func onCopy(_ sender: UIButton) {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
+                   
+        UIPasteboard.general.string = (cell.PasswordLabel.text!)
+        
+    }
+    
     
     @IBAction func onLogout(_ sender: Any) {
         
@@ -91,16 +99,16 @@ class ProfileTableViewController: UITableViewController {
         return 1
     }
 
-
+// if uncommented: creationview does not work, also unable to pass data since indexPath is out of range
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//        print("Loading up the details screen")
+//        print("Loading up the screen")
 //
 //        let cell = sender as! UITableViewCell
 //        let indexPath = tableView.indexPath(for: cell)!
-//        let account = posts[indexPath.row]
+//        let post = accounts[indexPath.row + 1]
 //
 //        let detailViewController = segue.destination as! DetailViewController
-//        detailViewController.post = account
+//        detailViewController.account = post
 //
 //    }
 

@@ -11,7 +11,7 @@ import AlamofireImage
 
 class DetailViewController: UIViewController {
 
-    var post: [String:Any]!
+    var account: [String:Any]!
     
     @IBOutlet weak var appNameUpdate: UITextField!
     
@@ -23,7 +23,7 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
         
-    let account = PFObject(className: "Accounts")
+    let accountInfo = PFObject(className: "Accounts")
     
 
    
@@ -32,7 +32,7 @@ class DetailViewController: UIViewController {
         account["password"] = passwordUpdate.text!
         account["account"] = appNameUpdate.text!
         
-        account.saveInBackground{ (success, error) in
+        accountInfo.saveInBackground{ (success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)
                 print("saved!")
