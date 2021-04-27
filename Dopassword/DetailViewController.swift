@@ -12,6 +12,7 @@ import AlamofireImage
 class DetailViewController: UIViewController {
 
     var account: [String:Any]!
+
     
     @IBOutlet weak var appNameUpdate: UITextField!
     
@@ -26,19 +27,63 @@ class DetailViewController: UIViewController {
     let accountInfo = PFObject(className: "Accounts")
     
 
-   
+    ///NOT DELETING FROM PARSE
+    @IBAction func onDeleteButton(_ sender: Any) {
+    //    PFObject.deleteAll(inBackground: [accountInfo], block: nil)
+        print("Good")
+        
+       var deleteAttributesOnly = true
+
+        var query = PFQuery(className:"Accounts")
+///Error: Type of Expression is ambigusous without more context.
+//        query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+//          (parseObject: PFObject?, error: NSError?) -> Void in
+//          if error != nil {
+//            print(error)
+//          } else if parseObject != nil {
+//            if deleteAttributesOnly {
+//              parseObject.removeObjectForKey("password")
+//              parseObject.removeObjectForKey("image")
+//              parseObject.removeObjectForKey("name")
+//              parseObject.removeObjectForKey("account")
+//              parseObject.saveInBackground()
+//            } else {
+//              parseObject.deleteInBackground()
+//            }
+//          }
+//        }
+    }
+    
     @IBAction func onSaveButton(_ sender: Any) {
         
-        account["password"] = passwordUpdate.text!
-        account["account"] = appNameUpdate.text!
+//        var query = PFQuery(className:"Accounts")
+//
+//        query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
+//          (parseObject: PFObject?, error: NSError?) -> Void in
+//          if error != nil {
+//            print(error)
+//          } else if parseObject != nil {
+//            parseObject["password"] = passwordUpdate.text!
+//            parseObject["image"] = PFFile(name:"resume.txt", data:"My string content".dataUsingEncoding(NSUTF8StringEncoding))
+//            parseObject["name"] = "A string"
+//            parseObject["account"] = appNameUpdate.text!
+//
+//            parseObject.saveInBackground()
+//          }
+        }
         
-        accountInfo.saveInBackground{ (success, error) in
-            if success {
-                self.dismiss(animated: true, completion: nil)
-                print("saved!")
-            } else {
-                print("Error!")
-            }
+        
+//        print("Error")
+//        account["password"] = passwordUpdate.text!
+//        account["account"] = appNameUpdate.text!
+//
+//        accountInfo.saveInBackground{ (success, error) in
+//            if success {
+//                self.dismiss(animated: true, completion: nil)
+//                print("saved!")
+//            } else {
+//                print("Error!")
+//            }
         
     }
     
@@ -52,5 +97,5 @@ class DetailViewController: UIViewController {
     }
     */
 
-}
-}
+//}
+//}

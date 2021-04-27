@@ -64,11 +64,10 @@ class ProfileTableViewController: UITableViewController {
         
         return cell
     }
-          
+          //Copying 
     @IBAction func onCopy(_ sender: UIButton) {
-
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
-                   
+     
         UIPasteboard.general.string = (cell.PasswordLabel.text!)
         
     }
