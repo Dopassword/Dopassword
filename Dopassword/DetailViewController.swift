@@ -11,16 +11,34 @@ import AlamofireImage
 
 class DetailViewController: UIViewController {
 
-    var account: [String:Any]!
-
+    var account: PFObject!
     
     @IBOutlet weak var appNameUpdate: UITextField!
     
     @IBOutlet weak var passwordUpdate: UITextField!
     
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    
+    @IBOutlet weak var appName: UILabel!
+    
+    
+    @IBOutlet weak var userName: UILabel!
+    
+    
+    @IBOutlet weak var password: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        appName.text = account["account"] as? String
+        userName.text = account["name"] as? String
+        password.text = account["password"] as? String
+        let imageFile = account["image"] as! PFFileObject
+        let urlString = imageFile.url!
+        let url = URL(string: urlString)!
+        
+        imageView.af.setImage(withURL: url)
         // Do any additional setup after loading the view.
     }
         
@@ -32,26 +50,19 @@ class DetailViewController: UIViewController {
     //    PFObject.deleteAll(inBackground: [accountInfo], block: nil)
         print("Good")
         
-       var deleteAttributesOnly = true
-
-        var query = PFQuery(className:"Accounts")
-///Error: Type of Expression is ambigusous without more context.
-//        query.getObjectInBackgroundWithId("<PARSE_OBJECT_ID>") {
-//          (parseObject: PFObject?, error: NSError?) -> Void in
-//          if error != nil {
-//            print(error)
-//          } else if parseObject != nil {
-//            if deleteAttributesOnly {
-//              parseObject.removeObjectForKey("password")
-//              parseObject.removeObjectForKey("image")
-//              parseObject.removeObjectForKey("name")
-//              parseObject.removeObjectForKey("account")
-//              parseObject.saveInBackground()
-//            } else {
-//              parseObject.deleteInBackground()
-//            }
-//          }
-//        }
+       
+        let query = PFQuery(className:"Accounts")
+//Error: Type of Expression is ambigusous without more context.
+        
+        
+        query.getObjectInBackground(withId: account.objectId!) { (parseObject, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            } else if parseObject != nil {
+                parseObject!.deleteInBackground()
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
     
     @IBAction func onSaveButton(_ sender: Any) {
@@ -70,9 +81,9 @@ class DetailViewController: UIViewController {
 //
 //            parseObject.saveInBackground()
 //          }
-        }
-        
-        
+//        }
+//
+//
 //        print("Error")
 //        account["password"] = passwordUpdate.text!
 //        account["account"] = appNameUpdate.text!
@@ -84,8 +95,8 @@ class DetailViewController: UIViewController {
 //            } else {
 //                print("Error!")
 //            }
-        
-    }
+//
+  }
     
     /*
     // MARK: - Navigation
@@ -98,4 +109,4 @@ class DetailViewController: UIViewController {
     */
 
 //}
-//}
+}

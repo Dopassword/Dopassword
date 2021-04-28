@@ -16,7 +16,7 @@ class ProfileTableViewController: UITableViewController {
     
     
     var posts = [PFObject]()
-    var accounts = [[String:Any]]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +64,7 @@ class ProfileTableViewController: UITableViewController {
         
         return cell
     }
-          //Copying 
+          //only copies prototype cell
     @IBAction func onCopy(_ sender: UIButton) {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
      
@@ -99,17 +99,20 @@ class ProfileTableViewController: UITableViewController {
     }
 
 // if uncommented: creationview does not work, also unable to pass data since indexPath is out of range
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//        print("Loading up the screen")
-//
-//        let cell = sender as! UITableViewCell
-//        let indexPath = tableView.indexPath(for: cell)!
-//        let post = accounts[indexPath.row + 1]
-//
-//        let detailViewController = segue.destination as! DetailViewController
-//        detailViewController.account = post
-//
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        print("Loading up the screen")
+        
+        if (segue.identifier == "detailViewController") {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        
+        let post = posts[indexPath.row]
+
+        let detailViewController = segue.destination as! DetailViewController
+        detailViewController.account = post
+
+        }
+    }
 
 
 }
