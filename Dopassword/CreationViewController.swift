@@ -23,11 +23,6 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         super.viewDidLoad()
     }
     
-    
-    @IBAction func onBack(_ sender: Any) {
-        performSegue(withIdentifier: "backSegue", sender: nil)
-    }
-    
     @IBAction func onSaveButton(_ sender: Any) {
         let account = PFObject(className: "Accounts")
         
@@ -47,10 +42,8 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
             } else {
                 print("Error!")
             }
-            
         }
-        
-     
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func onLogoButton(_ sender: Any) {

@@ -31,6 +31,7 @@ class ProfileTableViewController: UITableViewController {
         let query = PFQuery(className:"Accounts")
         query.includeKey("name")
         query.limit = 10
+        query.whereKey("username", contains: PFUser.current()?.username!)
         
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
