@@ -60,7 +60,9 @@ class DetailViewController: UIViewController {
                 print(error!.localizedDescription)
             } else if parseObject != nil {
                 parseObject!.deleteInBackground()
-                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
+                // delete later self.performSegue(withIdentifier: "backSegue", sender: nil)
+                // eli put this one in self.dismiss(animated: true, completion: nil)
             }
         }
     }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -89,7 +89,7 @@
             <objects>
                 <tableViewController id="Ejh-wL-r79" customClass="ProfileTableViewController" customModule="Dopassword" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="v50-xB-LHJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -178,7 +178,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus.square" catalog="system" id="6gp-sN-by9">
                             <connections>
-                                <segue destination="NAD-nF-92f" kind="presentation" id="7iF-EC-aQU"/>
+                                <segue destination="NAD-nF-92f" kind="show" id="7iF-EC-aQU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -327,28 +327,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cus-xV-CCV">
-                                <rect key="frame" x="0.0" y="31" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Create Profile" id="NQl-iM-Whb">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="eEO-vl-kw4">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kIc-sq-KvY">
-                                                <rect key="frame" x="20" y="7" width="92" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Back"/>
-                                            </button>
-                                            <connections>
-                                                <segue destination="Ejh-wL-r79" kind="presentation" id="LQg-Rg-dd6"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="br0-P7-Akx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="q7d-ad-Mvg"/>
                     <connections>
                         <outlet property="accountField" destination="Eus-2w-24f" id="yDt-Vl-fQx"/>
                         <outlet property="imageView" destination="a19-Ks-wj2" id="6mJ-Zl-y7j"/>
@@ -382,9 +365,6 @@
             <point key="canvasLocation" x="3" y="822"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="LQg-Rg-dd6"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="dopasswordlogo" width="200" height="200"/>
         <image name="plus.square" catalog="system" width="128" height="114"/>

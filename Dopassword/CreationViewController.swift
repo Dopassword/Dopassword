@@ -22,7 +22,12 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    
+    @IBAction func onBack(_ sender: Any) {
+        performSegue(withIdentifier: "backSegue", sender: nil)
+    }
+    
     @IBAction func onSaveButton(_ sender: Any) {
         let account = PFObject(className: "Accounts")
         
