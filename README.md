@@ -31,19 +31,20 @@ A simple, yet effective way of managing different passwords. A user can login, a
 
 - [X] User can register a new account with the password manager
 - [X] User can login
-- [] User can add a new account
-- [] User can add a corresponding password
-- [] User can name an account
-- [] User can remove an account from the password manager
-- [] User can update password
-- [] User can view all accounts in a list
+- [X] User can add a new account
+- [X] User can add a corresponding password
+- [X] User can name an account
+- [X] User can remove an account from the password manager
+- [X] User can update password
+- [X] User can view all accounts in a list
 
 **Optional Nice-to-have Stories**
 
 - [] User can generate a new password
 - [] Two-factor authentication
 - [] User can search for an account
-- [] Add logos for applications
+- [] User can copy password to clipboard
+- [X] Add logos for applications
 
 ### 2. Screen Archetypes
 
@@ -149,3 +150,6 @@ Here's a walkthrough of progress after week one:
 Here's a walkthrough of progress after week two:
 
 <img src='http://g.recordit.co/lCUB9F3m20.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Here's a walkthrough of progress after week three:
+<img src='http://g.recordit.co/Dp6yfXLuHN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
