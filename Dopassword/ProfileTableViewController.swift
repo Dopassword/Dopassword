@@ -20,7 +20,7 @@ class ProfileTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = 140
+        tableView.rowHeight = 135
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -31,7 +31,8 @@ class ProfileTableViewController: UITableViewController {
         let query = PFQuery(className:"Accounts")
         query.includeKey("name")
         query.limit = 10
-        query.whereKey("username", contains: PFUser.current()?.username!)
+        //if uncommented, no posts show up
+        //query.whereKey("username", contains: PFUser.current()?.username!)
         
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
