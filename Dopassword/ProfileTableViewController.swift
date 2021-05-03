@@ -32,7 +32,7 @@ class ProfileTableViewController: UITableViewController {
         query.includeKey("author")
         query.limit = 10
         //if uncommented, no posts show up
-        //query.whereKey("author.username", contains: PFUser.current()?.username!)
+        query.whereKey("author", contains: PFUser.current()?.objectId!)
         
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
