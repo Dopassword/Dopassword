@@ -137,7 +137,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Copy password"/>
                                             <connections>
-                                                <action selector="onCopy:" destination="Ejh-wL-r79" eventType="touchUpInside" id="ccA-a2-OFK"/>
+                                                <action selector="onCopy:" destination="sLZ-rp-h5i" eventType="touchUpInside" id="n5C-LC-bja"/>
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvV-BF-78d">

@@ -29,14 +29,18 @@ class ProfileTableViewController: UITableViewController {
         super.viewDidAppear(animated)
 
         let query = PFQuery(className:"Accounts")
-        query.includeKey("name")
+        query.includeKey("author")
         query.limit = 10
         //if uncommented, no posts show up
-        //query.whereKey("username", contains: PFUser.current()?.username!)
+        //query.whereKey("author.username", contains: PFUser.current()?.username!)
         
         query.findObjectsInBackground { (posts, error) in
             if posts != nil {
                 self.posts = posts!
+                print(self.posts)
+                for item in self.posts {
+                    print(item["author"])
+                }
                 self.tableView.reloadData()
             }
         }
@@ -67,12 +71,7 @@ class ProfileTableViewController: UITableViewController {
         return cell
     }
           //only copies prototype cell
-    @IBAction func onCopy(_ sender: UIButton) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AccountCell") as! AccountCell
-     
-        UIPasteboard.general.string = (cell.PasswordLabel.text!)
-        
-    }
+
     
     
     @IBAction func onLogout(_ sender: Any) {

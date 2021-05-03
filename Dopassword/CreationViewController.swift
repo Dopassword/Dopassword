@@ -29,6 +29,7 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         account["name"] = usernameField.text!
         account["password"] = passwordField.text!
         account["account"] = accountField.text!
+        account["author"] = PFUser.current()
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)

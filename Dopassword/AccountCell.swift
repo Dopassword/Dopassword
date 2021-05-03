@@ -20,6 +20,12 @@ class AccountCell: UITableViewCell {
         // Initialization code
     }
     
+    @IBAction func onCopy(_ sender: UIButton) {
+     
+        UIPasteboard.general.string = (self.PasswordLabel.text!)
+        
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
