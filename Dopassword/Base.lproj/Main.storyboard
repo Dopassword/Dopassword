@@ -279,7 +279,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="onSaveButton:" destination="NAD-nF-92f" eventType="touchUpInside" id="1FO-ca-zJY"/>
                                     <action selector="onSaveButton:" destination="ZS8-kn-cFZ" eventType="touchUpInside" id="WeC-25-Cc6"/>
                                 </connections>
                             </button>
@@ -299,8 +298,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onDeleteButton:" destination="ZS8-kn-cFZ" eventType="touchUpInside" id="5ZA-eQ-weM"/>
-                                    <action selector="onSaveButton:" destination="NAD-nF-92f" eventType="touchUpInside" id="afI-Rv-tSv"/>
-                                    <action selector="onSaveButton:" destination="ZS8-kn-cFZ" eventType="touchUpInside" id="sq2-to-1a2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbs-YG-fz8">
@@ -310,6 +307,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACi-AU-6Fs">
+                                <rect key="frame" x="324" y="380" width="70" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.59959036200000004" blue="0.25891171810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Random">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRandom:" destination="NAD-nF-92f" eventType="touchUpInside" id="VQK-wt-m0D"/>
+                                    <action selector="onRandom:" destination="ZS8-kn-cFZ" eventType="touchUpInside" id="ZBE-SM-RCV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RbN-hc-rrR"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
@@ -393,6 +404,19 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s07-YM-MZE">
+                                <rect key="frame" x="324" y="449" width="70" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.59959036200000004" blue="0.25891171810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Random">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRandom:" destination="NAD-nF-92f" eventType="touchUpInside" id="Tbn-MI-Tpi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="br0-P7-Akx"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>

@@ -23,6 +23,23 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         super.viewDidLoad()
     }
     
+    
+    @IBAction func onRandom(_ sender: Any) {
+        
+        passwordField.text = randomString(length: 8)
+        
+    }
+    
+    func randomString(length : Int) -> String {
+        let charSet = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*")
+        var random = ""
+        for _ in 1...length {
+            random.append(charSet.randomElement()!)
+        }
+        return random
+    }
+        
+    
     @IBAction func onSaveButton(_ sender: Any) {
         let account = PFObject(className: "Accounts")
         
@@ -38,13 +55,12 @@ class CreationViewController: UIViewController, UIImagePickerControllerDelegate,
         
         account.saveInBackground{ (success, error) in
             if success {
-                self.dismiss(animated: true, completion: nil)
+                self.navigationController?.popViewController(animated: true)
                 print("saved!")
             } else {
                 print("Error!")
             }
         }
-        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func onLogoButton(_ sender: Any) {

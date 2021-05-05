@@ -44,6 +44,20 @@ class DetailViewController: UIViewController {
         
     let accountInfo = PFObject(className: "Accounts")
     
+    @IBAction func onRandom(_ sender: Any) {
+        
+        passwordUpdate.text = randomString(length: 8)
+        
+    }
+    
+    func randomString(length : Int) -> String {
+        let charSet = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*")
+        var random = ""
+        for _ in 1...length {
+            random.append(charSet.randomElement()!)
+        }
+        return random
+    }
 
 
     @IBAction func onDeleteButton(_ sender: Any) {
