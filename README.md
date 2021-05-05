@@ -40,10 +40,10 @@ A simple, yet effective way of managing different passwords. A user can login, a
 
 **Optional Nice-to-have Stories**
 
-- [] User can generate a new password
+- [X] User can generate a new password
 - [] Two-factor authentication
 - [] User can search for an account
-- [] User can copy password to clipboard
+- [X] User can copy password to clipboard
 - [X] Add logos for applications
 
 ### 2. Screen Archetypes
