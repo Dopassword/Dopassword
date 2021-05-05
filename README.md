@@ -40,10 +40,10 @@ A simple, yet effective way of managing different passwords. A user can login, a
 
 **Optional Nice-to-have Stories**
 
-- [] User can generate a new password
+- [X] User can generate a new password
 - [] Two-factor authentication
 - [] User can search for an account
-- [] User can copy password to clipboard
+- [X] User can copy password to clipboard
 - [X] Add logos for applications
 
 ### 2. Screen Archetypes
@@ -154,3 +154,7 @@ Here's a walkthrough of progress after week two:
 Here's a walkthrough of progress after week three:
 
 <img src='http://g.recordit.co/Dp6yfXLuHN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
+
+Here's a walkthrough of progress after week four:
+
+<img src='http://g.recordit.co/QYbUDvkwtt.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
