@@ -156,4 +156,4 @@ Here's a walkthrough of progress after week three:
 <img src='http://g.recordit.co/Dp6yfXLuHN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
 
 Here's a walkthrough of progress after week four:
-<img src='https://recordit.co/QYbUDvkwtt' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
+<img src='http://g.recordit.co/QYbUDvkwtt.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
